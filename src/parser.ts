@@ -62,7 +62,7 @@ export class Parser {
             this.expression = "(^)+([ \\t]*[ \\t]*)";
         } else {
             // start by finding the delimiter (//, --, #, ') with optional spaces or tabs
-            this.expression = "(" + this.delimiter + ")+( |\t)*";
+            this.expression = "(" + this.delimiter + ")+(\t)*";
         }
 
         // Apply all configurable comment start tags
